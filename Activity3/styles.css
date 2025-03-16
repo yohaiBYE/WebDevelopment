@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.cl {
+    background-color: #fff8ec;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #6B3E2E;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.nav {
+    background-color: #fff8ec;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.nav a {
+    color: #6B3E2E;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+#achievementCarousel {
+    max-width: 80%;
+    max-height: 500px;
+    margin: auto;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    max-height: 400px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    background-color: #FFF3E6;
+}
+
+
+button, .btn {
+    background-color: #D4745E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #C06450;
+}
+
+.card {
+    background: #FFF3E6;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Carousel */
+.carousel-item img {
+    border-radius: 15px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #6B3E2E;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}

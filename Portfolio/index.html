@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href=https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="cl">
+    <nav class="navbar navbar-expand-lg ">
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">Menu</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about-me-section">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills-section">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#achievements-section">Achievements</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education-section">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects-section">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about-me-section">
+        <div class="container d-flex justify-content-center mt-5">
+            <div class="profile-card">
+                <img src="Images/headpic.png" alt="Profile Picture" class="profile-img">
+                <div class="profile-text">
+                    <h5>Hello! My Name is</h5>
+                    <h3>Yohairra China A. Ignacio</h3>
+                    <p class="text-muted">3rd Year Computer Science Student</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="skills-section">
+        <h2 class="text-center">Skills</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="skill-card">
+                        <p>Programming: </p><i>Entry level-proficiency in C, Java, C#, HTML, SQL, and CSS</i>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="skill-card">
+                        <p>UI/UX Design: </p><i>Proficient in Figma, Adobe Photoshop, Illustrator, Procreate, and Aseprite</i>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="skill-card">
+                        <p>Game Development: </p><i>Entry level-proficiency in Godot Game Engine and GdScript</i>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="skill-card">
+                        <p>Excellent Communication and analytical skills</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="skill-card">
+                        <p>Strong Attention to Detail</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="skill-card">
+                        <p>Quick Learning Ability</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements-section">
+        <h2 class="text-center">Achievements</h2>
+        <div class="container">
+            <div id="achievementsCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#achievementsCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#achievementsCarousel" data-slide-to="1"></li>
+                    <li data-target="#achievementsCarousel" data-slide-to="2"></li>
+                </ol>
+    
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="achievement-card">
+                            <img src="Images/MamangScoopetero_Achievement.GIF" class="d-block w-100" alt="Achievement 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Mamang Scoopetero</h5>
+                                <p>Successfully developed a complete retro-style game including all visual assets.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="achievement-card">
+                            <img src="Images/DOST.jpg" class="d-block w-100" alt="Achievement 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>DOST Scholarship Recipient</h5>
+                                <p>Qualified among 10,487 candidates for the prestigious ST-SEI S&T Undergraduate Scholarship</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="achievement-card">
+                            <img src="Images/Sintalento_Achievement.jpg" class="d-block w-100" alt="Achievement 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Sintalento</h5>
+                                <p>Organized a university-wide event that brought together student performers and attendees</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <a class="carousel-control-prev" href="#achievementsCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#achievementsCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="education-section">
+        <h2 class="text-center">Education</h2>
+        <div class="container">
+            <table class="education-table">
+                <thead>
+                    <tr>
+                        <th>University</th>
+                        <th>Degree</th>
+                        <th>Year Attended</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Polytechnic University of the Philippines</td>
+                        <td>Bachelor of Science in Computer Science</td>
+                        <td>2022 - 2025</td>
+                    </tr>
+                    <tr>
+                        <td>University of Santo Tomas</td>
+                        <td>Senior High School - STEM</td>
+                        <td>2020 - 2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <br
+    <section id="projects-section">
+        <h2 class="text-center">Projects</h2>
+        <div class="projects-container">
+            <div class="project-card highlighted">
+                <img src="Images/MamangScoopetero.PNG" alt="Project Image">
+                <p>A casual Sorbetes Cart simulation game using GdScript and Godot Game Engine</p>
+                <a href="https://github.com/Yohairra/mamang-scoopetero" target="_blank" class="btn">Link to GitHub</a>
+            </div>
+            <div class="project-card">
+                <img src="Images/ChaoFanKiosk.png" alt="Project Image">
+                <p>A Kiosk System for a "Chao Fan" stall in the PUP</p>
+                <a href="https://github.com/Yohairra/ChaoFan" target="_blank" class="btn">Link to GitHub</a>
+            </div>
+            <div class="project-card">
+                <img src="Images/GarbageBinThereDoneThat.PNG" alt="Project Image">
+                <p>A game for trash organization</p>
+                <a href="https://github.com/psanoy17/GarbageGame" target="_blank" class="btn">Link to GitHub</a>
+            </div>
+            <div class="project-card">
+                <img src="Images/RoomReservation.png" alt="Project Image">
+                <p>A laboratory room reservation system for the students of CCIS</p>
+                <a href="https://github.com/aaronbolado/CCIS-Laboratory-Room-Management" target="_blank" class="btn">Link to GitHub</a>
+            </div>
+
+        </div>
+    </section>
+    
+    <footer class="bg-dark text-white text-center p-3">
+        CONTACT ME: ignacioyohairra15@gmail.com | 09568147407
+    </footer>
+</body>
+</html>
