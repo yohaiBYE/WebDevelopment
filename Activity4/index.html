@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./silya_assets/home/hero_bg/silya_logo.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+<body>
+    <div class="checkered-border-top" aria-hidden="true">
+        <img src="images/checkeredbackground.jpg" alt="Decorative red and white checkered background">
+    </div>
+    <!--
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">Deo Gracias</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+-->
+    <header class="menu-container" id="top">
+        <h1 class="menu-title">Menu</h1>
+
+        <nav class="category-tabs" aria-label="Menu categories">
+            <ul class="category-list" role="menubar">
+                <li role="none"><a href="#tapas-frias" class="nav-link" role="menuitem">Tapas Frias</a></li>
+                <li role="none"><a href="#ensaladas" class="nav-link" role="menuitem">Ensaladas</a></li>
+                <li role="none"><a href="#tapas-calientes" class="nav-link" role="menuitem">Tapas Calientes</a></li>
+                <li role="none"><a href="#principales" class="nav-link" role="menuitem">Principales</a></li>
+                <li role="none"><a href="#arros-y-fideos" class="nav-link" role="menuitem">Arroces Y Fideos</a></li>
+                <li role="none"><a href="#postres" class="nav-link" role="menuitem">Postres</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="food-section">
+            <h2 class="food-title" id="tapas-frias"><span>Tapas Frias</span></h2>
+
+            <div class="food-slider" role="region" aria-label="Tapas Frias menu items">
+                <div class="food-grid">
+                    <div class="food-item">
+                        <article class="food-card">
+                            <div class="food-card-header">
+                                <div class="food-card-availability" aria-label="Availability status">Available</div>
+                                <div class="food-card-price" aria-label="Price">1152</div>
+                            </div>
+                        </article>
+
+                        <div class="food-card-image">
+                            <img src="images/frias_pulpo.jpg" alt="Pulpo a la Gallega dish">
+                        </div>
+
+                        <div class="food-detail">
+                            <h3 class="food-name">Pulpo a la Gallega "Deo Gracias"</h3>
+                            <p class="food-description">Sous vide steamed octopus, potato and sobrasada cream, pimentón oil</p>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <article class="food-card">
+                            <div class="food-card-header">
+                                <div class="food-card-availability" aria-label="Availability status">Available</div>
+                                <div class="food-card-price" aria-label="Price">840</div>
+                            </div>
+                        </article>
+
+                        <div class="food-card-image">
+                            <img src="images/frias_carpaccio.PNG" alt="Carpaccio De Vaca dish">
+                        </div>
+
+                        <div class="food-detail">
+                            <h3 class="food-name">Carpaccio De Vaca</h3>
+                            <p class="food-description">Thinly sliced beef, Mahon cheese, almonds, truffle mustard dressing</p>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <article class="food-card-no-image">
+                            <div class="food-card-header">
+                                <div class="food-card-availability" aria-label="Availability status">Available</div>
+                                <div class="food-card-price" aria-label="Price">460</div>
+                            </div>
+
+                            <div class="food-detail">
+                                <h3 class="food-name">Salmorejo asado con jamón</h3>
+                                <p class="food-description">Cold roasted tomato soup, jamón serrano, poached quail eggs</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="food-item">
+                        <article class="food-card-no-image">
+                            <div class="food-card-header">
+                                <div class="food-card-availability" aria-label="Availability status">Available</div>
+                                <div class="food-card-price" aria-label="Price">696</div>
+                            </div>
+
+                            <div class="food-detail">
+                                <h3 class="food-name">Boquerones manzanas y piparras</h3>
+                                <p class="food-description">Marinated white anchovies, green apple, garlic, piparra mousse</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="food-title" id="ensaladas"><span>Ensaladas</span></h2>
+
+            <div class="food-slider" role="region" aria-label="Ensaladas menu items">
+                <div class="food-grid">
+                    <div class="food-item">
+                        <article class="food-card">
+                            <div class="food-card-header">
+                                <div class="food-card-availability" aria-label="Availability status">Available</div>
+                                <div class="food-card-price" aria-label="Price">830</div>
+                            </div>
+                        </article>
+
+                        <div class="food-card-image">
+                            <img src="images/ensaladas_queso.png" alt="Ensalada de queso de cabra y nueces dish">
+                        </div>
+
+                        <div class="food-detail">
+                            <h3 class="food-name">Ensalada de queso de cabra y nueces</h3>
+                            <p class="food-description">Arugula, fried goat cheese, walnuts, quince, sun dried tomatoes, honey mustard dressing</p>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <article class="food-card">
+                            <div class="food-card-header">
+                                <div class="food-card-availability" aria-label="Availability status">Available</div>
+                                <div class="food-card-price" aria-label="Price">760</div>
+                            </div>
+                        </article>
+
+                        <div class="food-card-image">
+                            <img src="images/ensaladas_salmon.PNG" alt="Ensalada de salmon cesar dish">
+                        </div>
+
+                        <div class="food-detail">
+                            <h3 class="food-name">Ensalada de salmon cesar</h3>
+                            <p class="food-description">Lettuce, salmon gravlax, cherry tomatoes, quail eggs, Caesar dressing</p>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <article class="food-card">
+                            <div class="food-card-header">
+                                <div class="food-card-availability" aria-label="Availability status">Available</div>
+                                <div class="food-card-price" aria-label="Price">540</div>
+                            </div>
+                        </article>
+
+                        <div class="food-card-image">
+                            <img src="images/ensaladas_panceta.PNG" alt="Ensalada de gulas y panceta dish">
+                        </div>
+
+                        <div class="food-detail">
+                            <h3 class="food-name">Ensalada de gulas y panceta</h3>
+                            <p class="food-description">Romaine, baby eels, homemade panceta, mushrooms, balsamic lemon vinaigrette</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="food-title" id="tapas-calientes"><span>Tapas Calientes</span></h2>
+
+            <div class="food-slider" role="region" aria-label="Tapas Calientes menu items">
+                <div class="food-grid">
+                    <div class="food-item">
+                        <article class="food-card">
+                            <div class="food-card-header">
+                                <div class="food-card-availability" aria-label="Availability status">Available</div>
+                                <div class="food-card-price" aria-label="Price">670</div>
+                            </div>
+                        </article>
+
+                        <div class="food-card-image">
+                            <img src="images/calientes_puntillas.PNG" alt="Puntillas fritas dish">
+                        </div>
+
+                        <div class="food-detail">
+                            <h3 class="food-name">Puntillas fritas</h3>
+                            <p class="food-description">Crispy baby squid, parsley alioli, squid ink alioli</p>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <article class="food-card">
+                            <div class="food-card-header">
+                                <div class="food-card-availability" aria-label="Availability status">Available</div>
+                                <div class="food-card-price" aria-label="Price">350</div>
+                            </div>
+                        </article>
+
+                        <div class="food-card-image">
+                            <img src="images/calientes_bravas.PNG" alt="Patatas Bravas dish">
+                        </div>
+
+                        <div class="food-detail">
+                            <h3 class="food-name">Patatas Bravas</h3>
+                            <p class="food-description">Fried marble potato confit, brava sauce, creamy garlic sauce</p>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <article class="food-card">
+                            <div class="food-card-header">
+                                <div class="food-card-availability" aria-label="Availability status">Available</div>
+                                <div class="food-card-price" aria-label="Price">660</div>
+                            </div>
+                        </article>
+
+                        <div class="food-card-image">
+                            <img src="images/calientes_frito.PNG" alt="Chorizos Fritos dish">
+                        </div>
+
+                        <div class="food-detail">
+                            <h3 class="food-name">Chorizos Fritos</h3>
+                            <p class="food-description">Fried chorizo de Cantimpalo, butifarra, sweet chorizo, chorizo criollo</p>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <article class="food-card">
+                            <div class="food-card-header">
+                                <div class="food-card-availability" aria-label="Availability status">Available</div>
+                                <div class="food-card-price" aria-label="Price">595</div>
+                            </div>
+                        </article>
+
+                        <div class="food-card-image">
+                            <img src="images/calientes_mejillones.PNG" alt="Mejillones Bravos dish">
+                        </div>
+
+                        <div class="food-detail">
+                            <h3 class="food-name">Mejillones Bravos</h3>
+                            <p class="food-description">Chilean mussels, spicy tomato sauce, white wine</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="food-title" id="principales"><span>Principales</span></h2>
+
+            <div class="food-slider" role="region" aria-label="Principales menu items">
+                <div class="food-grid">
+                    <div class="food-item">
+                        <article class="food-card">
+                            <div class="food-card-header">
+                                <div class="food-card-availability" aria-label="Availability status">Available</div>
+                                <div class="food-card-price" aria-label="Price">850</div>
+                            </div>
+                        </article>
+
+                        <div class="food-card-image">
+                            <img src="images/principales_callos.PNG" alt="Callos A la Bilbaina dish">
+                        </div>
+
+                        <div class="food-detail">
+                            <h3 class="food-name">Callos A la Bilbaina</h3>
+                            <p class="food-description">Prok and beef tripe stew, chickpeas</p>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <article class="food-card">
+                            <div class="food-card-header">
+                                <div class="food-card-availability" aria-label="Availability status">Available</div>
+                                <div class="food-card-price" aria-label="Price">1,580</div>
+                            </div>
+                        </article>
+
+                        <div class="food-card-image">
+                            <img src="images/principales_chuletas.PNG" alt="Chuletas de cordero dish">
+                        </div>
+
+                        <div class="food-detail">
+                            <h3 class="food-name">Chuletas de cordero</h3>
+                            <p class="food-description">Lamb chops, couscous, maruno sauce</p>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <article class="food-card">
+                            <div class="food-card-header">
+                                <div class="food-card-availability" aria-label="Availability status">Available</div>
+                                <div class="food-card-price" aria-label="Price">6000</div>
+                            </div>
+                        </article>
+
+                        <div class="food-card-image">
+                            <img src="images/principales_conchinillo.PNG" alt="Cuarto de conchinillo dish">
+                        </div>
+
+                        <div class="food-detail">
+                            <h3 class="food-name">Cuarto de conchinillo</h3>
+                            <p class="food-description">Quartered Castilian-style roasted suckling pig, sides of Andalusian marinated potatoes, and green salad</p>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <article class="food-card">
+                            <div class="food-card-header">
+                                <div class="food-card-availability" aria-label="Availability status">Available</div>
+                                <div class="food-card-price" aria-label="Price">3400</div>
+                            </div>
+                        </article>
+
+                        <div class="food-card-image">
+                            <img src="images/principales_entrecot.PNG" alt="Entrecot 400 dish">
+                        </div>
+
+                        <div class="food-detail">
+                            <h3 class="food-name">Entrecot 400</h3>
+                            <p class="food-description">400g ribeye steak, homemade fries, roasted bell pepper confit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="food-title" id="arroces-y-fideos"><span>Arroces Y Fideos</span></h2>
+
+            <div class="food-slider" role="region" aria-label="Arroces Y Fideos menu items">
+                <div class="food-grid">
+                    <div class="food-item">
+                        <article class="food-card">
+                            <div class="food-card-header">
+                                <div class="food-card-availability" aria-label="Availability status">Available</div>
+                                <div class="food-card-price" aria-label="Price">890</div>
+                            </div>
+                        </article>
+
+                        <div class="food-card-image">
+                            <img src="images/arroces_pato.png" alt="Paella Pato dish">
+                        </div>
+
+                        <div class="food-detail">
+                            <h3 class="food-name">Paella Pato</h3>
+                            <p class="food-description">Duck, green onions, orange alioli</p>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <article class="food-card">
+                            <div class="food-card-header">
+                                <div class="food-card-availability" aria-label="Availability status">Available</div>
+                                <div class="food-card-price" aria-label="Price">920</div>
+                            </div>
+                        </article>
+
+                        <div class="food-card-image">
+                            <img src="images/arroces_pollo.png" alt="Pollo Y Alcachofas dish">
+                        </div>
+
+                        <div class="food-detail">
+                            <h3 class="food-name">Pollo Y Alcachofas</h3>
+                            <p class="food-description">Chicken, artichokes, chorizo, thyme alioli</p>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <article class="food-card">
+                            <div class="food-card-header">
+                                <div class="food-card-availability" aria-label="Availability status">Available</div>
+                                <div class="food-card-price" aria-label="Price">890</div>
+                            </div>
+                        </article>
+
+                        <div class="food-card-image">
+                            <img src="images/arroces_mejillones.png" alt="Mejillones Y oricios dish">
+                        </div>
+
+                        <div class="food-detail">
+                            <h3 class="food-name">Mejillones Y oricios</h3>
+                            <p class="food-description">Mussels, uni, alioli</p>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <article class="food-card">
+                            <div class="food-card-header">
+                                <div class="food-card-availability" aria-label="Availability status">Available</div>
+                                <div class="food-card-price" aria-label="Price">880</div>
+                            </div>
+                        </article>
+
+                        <div class="food-card-image">
+                            <img src="images/arroces_negra.png" alt="Negra dish">
+                        </div>
+
+                        <div class="food-detail">
+                            <h3 class="food-name">Negra</h3>
+                            <p class="food-description">Black cuttlefish ink sofrito, crispy baby squid, parsley alioli</p>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <article class="food-card">
+                            <div class="food-card-header">
+                                <div class="food-card-availability" aria-label="Availability status">Available</div>
+                                <div class="food-card-price" aria-label="Price">680</div>
+                            </div>
+                        </article>
+
+                        <div class="food-card-image">
+                            <img src="images/arroces_verduras.png" alt="Verduras dish">
+                        </div>
+
+                        <div class="food-detail">
+                            <h3 class="food-name">Verduras</h3>
+                            <p class="food-description">Celery, fennel, cherry tomatoes, green asparagus, red mojo sauce</p>
+                        </div>
+                    </div>
+                    
+                    <div class="food-item">
+                        <article class="food-card-no-image">
+                            <div class="food-card-header">
+                                <div class="food-card-availability" aria-label="Availability status">Available</div>
+                                <div class="food-card-price" aria-label="Price">950</div>
+                            </div>
+
+                            <div class="food-detail">
+                                <h3 class="food-name">Risotto Iberico</h3>
+                                <p class="food-description">Spanish-style risotto—freshporcini mushrooms, jamon iberico, and Machego cheese</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="food-title" id="postres"><span>Postres</span></h2>
+
+            <div class="food-slider" role="region" aria-label="Postres menu items">
+                <div class="food-grid">
+                    <div class="food-item">
+                        <article class="food-card-no-image">
+                            <div class="food-card-header">
+                                <div class="food-card-availability" aria-label="Availability status">Available</div>
+                                <div class="food-card-price" aria-label="Price">768</div>
+                            </div>
+            
+                            <div class="food-detail">
+                                <h3 class="food-name">Tarta De queso Manchego</h3>
+                                <p class="food-description">Burnt Manchego cheesecake, homemade seasonal jam</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="food-item">
+                        <article class="food-card-no-image">
+                            <div class="food-card-header">
+                                <div class="food-card-availability" aria-label="Availability status">Available</div>
+                                <div class="food-card-price" aria-label="Price">456</div>
+                            </div>
+            
+                            <div class="food-detail">
+                                <h3 class="food-name">Torrija Borracha</h3>
+                                <p class="food-description">Caramelized cold brioche infused with Irish cream liqueur</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="#top" class="scroll-to-top" aria-label="Scroll to top of page">
+        <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="chevron-up" aria-hidden="true">
+            <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path>
+        </svg>
+    </a>
+
+    <div class="upper-corner-bg" aria-hidden="true">
+        <div class="upper-rectangle-bg"></div>
+        <div class="upper-circle-bg"></div>
+        <div class="upper-roundedrec-bg"></div>
+    </div>
+
+    <div class="lower-corner-bg" aria-hidden="true">
+        <div class="lower-roundedrec-bg"></div>
+        <div class="lower-circle-bg"></div>
+        <div class="lower-rectangle-bg"></div>
+    </div>
+
+    <div class="checkered-border-bottom" aria-hidden="true">
+        <img src="images/checkeredbackground.jpg" alt="Decorative red and white checkered background">
+    </div>
+</body>
+</html>
