@@ -1,0 +1,435 @@
+:root {
+    --main-color: #C74336;
+    --accent-color: #F1E8DD;
+    --secondary-color: #CB933A;
+    --font-color: #3e3e3d;
+}
+
+@font-face {
+    font-family: 'MonologueSans';
+    src: url('font/monologuesansregular-regular.woff') format('woff'),
+        url('font/monologuesansregular-regular.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monologue Sans-Regular';
+    src: url(./font/monologuesansregular-regular.otf);
+}
+  
+@font-face {
+    font-family: 'Kanit-Regular';
+    src: url(./font/Kanit-Regular.ttf);
+}
+  
+@font-face{
+    font-family: 'Kanit-ThinItalic';
+    src:url(./font/Kanit-ThinItalic.ttf);
+}
+  
+@font-face{
+    font-family: 'Kanit-Medium';
+    src:url(./font/Kanit-Medium.ttf);
+}
+  
+@font-face{
+    font-family: 'Kanit-ExtraLight';
+    src:url(./font/Kanit-ExtraLight.ttf);
+}
+  
+@font-face{
+    font-family: 'Kanit-BoldItalic';
+    src:url(./font/Kanit-BoldItalic.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--accent-color) !important;
+    font-family: "Monologue Sans Regular", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4.5%;
+    position: relative;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: var(--font-color);
+    padding: 2.5rem;
+    font-family: "Monologue Sans Regular";
+    text-align: center;
+}
+
+/* Responsive Gallery Container */
+.images-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 90%;
+    max-width: 1200px;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 992px) {
+    .images-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 120px;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    .rectangle,
+    .rectangle4 {
+        height: 4vh;
+    }
+
+    .rectangle2,
+    .rectangle5 {
+        height: 6vh;
+    }
+
+    .rectangle3,
+    .rectangle6 {
+        height: 8vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .images-container {
+        grid-template-columns: 1fr;
+        width: 95%;
+        margin-bottom: 100px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .rectangle,
+    .rectangle4 {
+        height: 3vh;
+    }
+
+    .rectangle2,
+    .rectangle5 {
+        height: 4vh;
+    }
+
+    .rectangle3,
+    .rectangle6 {
+        height: 5vh;
+    }
+}
+
+.column1,
+.column2,
+.column3,
+.column4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.images-container img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 5px 0;
+    aspect-ratio: 1 / 1;
+}
+
+.images-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* NAV BAR*/
+.navbar-dark {
+    font-family: "Kanit-Regular", serif;
+    font-optical-sizing: auto;
+    font-size: clamp(18px, 2vw, 24px);
+    padding: 15px 0;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    background: var(--main-color);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    color: #FFF;
+    text-align: center;
+    font-family: "Monologue Sans Regular";
+    font-size: clamp(24px, 3vw, 32px);
+    letter-spacing: 2px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 8px 16px !important;
+    transition: all 0.3s;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar-nav .nav-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-link:hover {
+    color: var(--main-color) !important;
+    background-color: var(--accent-color);
+    border-radius: 35px;
+}
+
+.nav-button .nav-link {
+    background-color: var(--accent-color);
+    color: var(--secondary-color) !important;
+    border-radius: 20px;
+    padding: 8px 20px !important;
+    margin-left: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid var(--accent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-button .nav-link:hover {
+    background-color: transparent;
+    color: var(--accent-color) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Rectangle Styling */
+.rectangle,
+.rectangle2,
+.rectangle3,
+.rectangle4,
+.rectangle5,
+.rectangle6 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.rectangle {
+    height: 5vh;
+    background-color: var(--secondary-color);
+    border-bottom-right-radius: 50px;
+}
+
+.rectangle2 {
+    height: 7vh;
+    background-color: var(--main-color);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.rectangle3 {
+    height: 10vh;
+    background-color: var(--font-color);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.rectangle4 {
+    height: 5.5vh;
+    background-color: var(--secondary-color);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.rectangle5 {
+    height: 23.5px;
+    background-color: var(--font-color);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.rectangle6 {
+    height: 71px;
+    background-color: var(--main-color);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+/* Scroll Reveal Animations */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.checkered {
+    width: 100%;
+    height: 40px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/* Shapes - Made responsive with relative units and media queries */
+.circle {
+    width: 150px;
+    height: 150px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    position: absolute;
+    left: -75px;
+    top: 30%;
+    z-index: 2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.circle2 {
+    width: 75px;
+    height: 150px;
+    background-color: var(--main-color);
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.soft-rectangle,
+.soft-rectangle2,
+.soft-rectangle3 {
+    width: 120px;
+    height: 200px;
+    border-radius: 40px;
+    position: absolute;
+    z-index: 2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+}
+
+.soft-rectangle {
+    background-color: var(--font-color);
+    right: -60px;
+    top: 10%;
+}
+
+.soft-rectangle2 {
+    background-color: var(--font-color);
+    right: -60px;
+    bottom: 50px;
+    clip-path: inset(0 50% 0 0);
+}
+
+.soft-rectangle3 {
+    background-color: var(--secondary-color);
+    left: -70px;
+    bottom: 50px;
+}
+
+/* Media queries for decorative elements */
+@media (max-width: 992px) {
+    .circle {
+        width: 120px;
+        height: 120px;
+        left: -60px;
+    }
+
+    .circle2 {
+        width: 60px;
+        height: 120px;
+    }
+
+    .soft-rectangle,
+    .soft-rectangle2,
+    .soft-rectangle3 {
+        width: 100px;
+        height: 160px;
+    }
+
+    .soft-rectangle {
+        right: -50px;
+    }
+
+    .soft-rectangle2 {
+        right: -50px;
+    }
+
+    .soft-rectangle3 {
+        left: -50px;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .circle {
+        width: 80px;
+        height: 80px;
+        left: -40px;
+    }
+
+    .circle2 {
+        width: 40px;
+        height: 80px;
+    }
+
+    .soft-rectangle,
+    .soft-rectangle2,
+    .soft-rectangle3 {
+        width: 60px;
+        height: 100px;
+    }
+
+    .soft-rectangle {
+        left: -30px;
+    }
+
+    .soft-rectangle2 {
+        right: -30px;
+    }
+
+    .soft-rectangle3 {
+        left: -30px;
+        bottom: 10px;
+    }
+}

@@ -1,16 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Anybody:ital,wght@0,100..900;1,100..900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
 :root {
-    --main-color: #C74336;
-    --secondary-color: #CB933A;
     --accent-color: #F1E8DD;
-    --font-color: #1E1E1E;
-    --dark: #3E3D3D;
+    --main-color: #C84337;
+    --font-color: #3E3D3D;
+    --secondary-color: #CB933A;
+    --light-color: #f5f0eb;
 }
 
 @font-face {
-    font-family: "MonologueSans";
-    src: url(monologuesansregular-regular.otf) format(opentype);
+    font-family: 'Monologue Sans-Regular';
+    src: url(./font/monologuesansregular-regular.otf);
+  }
+  
+@font-face {
+    font-family: 'Kanit-Regular';
+    src: url(./font/Kanit-Regular.ttf);
+}
+  
+@font-face{
+    font-family: 'Kanit-ThinItalic';
+    src:url(./font/Kanit-ThinItalic.ttf);
+}
+  
+@font-face{
+    font-family: 'Kanit-Medium';
+    src:url(./font/Kanit-Medium.ttf);
+}
+  
+@font-face{
+    font-family: 'Kanit-ExtraLight';
+    src:url(./font/Kanit-ExtraLight.ttf);
+}
+  
+@font-face{
+    font-family: 'Kanit-BoldItalic';
+    src:url(./font/Kanit-BoldItalic.ttf);
 }
 
 @media (max-width: 1200px) {
@@ -50,17 +75,17 @@
         font-size: 2.5em;
     }
     
-    .category-list {
+    .menu-list {
         padding: 5px;
         gap: 5px;
     }
     
-    .category-list li {
+    .menu-list li {
         width: auto;
         padding: 8px 10px;
     }
     
-    .nav-link {
+    .menu-link {
         font-size: 14px;
     }
     
@@ -109,21 +134,21 @@
         font-size: 2em;
     }
     
-    .category-tabs {
+    .menu-tabs {
         margin-top: 10px;
     }
     
-    .category-list {
+    .menu-list {
         border-width: 1px;
         outline-width: 1px;
         outline-offset: -3px;
     }
     
-    .category-list li {
+    .menu-list li {
         padding: 6px 8px;
     }
     
-    .nav-link {
+    .menu-link {
         font-size: 12px;
     }
     
@@ -177,7 +202,7 @@
         max-width: 200px;
     }
     
-    .checkered-border-top img, .checkered-border-bottom img {
+    .checkered-border-bottom img {
         height: 30px;
     }
     
@@ -230,7 +255,21 @@ body {
 html, body {
     position: relative;
 }
-/*
+
+/* Navigation Bar */
+.navbar-dark {
+    font-family: "Kanit-Regular", serif;
+    font-optical-sizing: auto;
+    font-size: clamp(18px, 2vw, 24px);
+    padding: 15px 0;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    background: var(--main-color);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
 .navbar-brand {
     color: #FFF;
     text-align: center;
@@ -267,12 +306,14 @@ html, body {
 }
 
 .nav-link:hover {
-    color: var(--light-color) !important;
+    color: var(--main-color) !important;
+    background-color: var(--accent-color);
+    border-radius: 35px;
 }
 
 .nav-button .nav-link {
     background-color: var(--light-color);
-    color: var(--#CB933A) !important;
+    color: var(--secondary-color) !important;
     border-radius: 20px;
     padding: 8px 20px !important;
     margin-left: 8px;
@@ -291,26 +332,8 @@ html, body {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-*/
 
-.checkered-border-top img, .checkered-border-bottom img {
-    width: 100%;
-    height: 40px;
-    object-fit: cover;
-    opacity: 80%;
-    mix-blend-mode: multiply;
-}
-
-.checkered-border-bottom {
-    position: relative;
-    margin-top: 20px;
-}
-
-.checkered-border-top {
-    position: relative;
-    margin-bottom: 20px;
-}
-
+/* Menu bar */
 .menu-container{
     flex: 1;
     margin-top: 0px;
@@ -325,19 +348,20 @@ html, body {
 .menu-title {
     font-size: 3em;
     font-weight: bold;
-    font-family: "MonologueSans";
+    font-family: "Monologue Sans-Regular";
+    margin-top: 85px;
     margin-bottom: 10px;
     color: var(--dark);
 }
 
-.category-tabs {
+.menu-tabs {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
 }
 
-.category-list {
+.menu-list {
     list-style: none;
     padding: 0;
     display: flex;
@@ -351,14 +375,14 @@ html, body {
     border: 2px solid var(--main-color);
     border-radius: 5px;
     outline: 2px dashed var(--main-color);
-    outline-offset: -5px;
+    outline-offset: 5px;
 }
 
-.category-list li{
+.menu-list li{
     cursor: pointer;
     padding: 10px 15px;
     color: var(--dark);
-    font-family: 'MonologueSans';
+    font-family: 'Monologue Sans-Regular';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -366,20 +390,20 @@ html, body {
     width: 100px;
 }
 
-.category-list::-webkit-scrollbar {
+.menu-list::-webkit-scrollbar {
     height: 8px;
 }
 
-.category-list::-webkit-scrollbar-track {
+.menu-list::-webkit-scrollbar-track {
     border-radius: 10px;
 }
 
-.category-list::-webkit-scrollbar-thumb {
+.menu-list::-webkit-scrollbar-thumb {
     background: var(--main-color);
     border-radius: 10px;
 }
 
-.nav-link {
+.menu-link {
     font-size: 16px;
     text-decoration: none;
     color: var(--dark);
@@ -390,18 +414,19 @@ html, body {
     height: 100%;
 }
 
-.nav-link:hover {
+.menu-link:hover {
     text-decoration: underline;
     color: #CB933A;
 }
 
+/* Food Section */
 .food-title {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
     font-size: 1.5em;
-    font-family: 'MonologueSans';
+    font-family: 'Monologue Sans-Regular';
     letter-spacing: 3px;
     color: var(--font-color);
     position: relative;
@@ -476,7 +501,7 @@ span {
 }
 
 .food-card {
-    background-image: url("images/cardbackground.png");
+    background-image: url("menu-images/cardbackground.png");
     background-size: cover;
     background-position: center;
     height: 200px;
@@ -498,7 +523,7 @@ span {
 }
 
 .food-card-availability {
-    font-family: 'MonologueSans', sans-serif;
+    font-family: 'Monologue Sans-Regular', sans-serif;
     letter-spacing: 5px;
 }
 
@@ -531,7 +556,7 @@ span {
 }
 
 .food-name {
-    font-family: 'MonologueSans';
+    font-family: 'Monologue Sans-Regular';
     font-size: 1.5em;
     color: var(--main-color);
     margin-top: 20px;
@@ -545,10 +570,11 @@ span {
     color: var(--dark);
     margin-top: 5px;
     max-width: 260px;
+    line-height: 1;
 }
 
 .food-card-no-image {
-    background-image: url("images/cardbackground.png");
+    background-image: url("menu-images/cardbackground.png");
     background-size: cover;
     background-position: center;
     height: 250px;
@@ -567,7 +593,7 @@ span {
 }
 
 .food-card-no-image .food-name {
-    font-family: 'MonologueSans';
+    font-family: 'Monologue Sans-Regular';
     font-size: 1.5em;
     color: var(--accent-color);
     margin-top: 10px;
@@ -671,4 +697,17 @@ span {
     height: 200px;
     background-color: #CB933A;
     border-radius: 0px 75px 0px 0px;
+}
+
+.checkered-border-bottom img {
+    width: 100%;
+    height: 40px;
+    object-fit: cover;
+    opacity: 80%;
+    mix-blend-mode: multiply;
+}
+
+.checkered-border-bottom {
+    position: relative;
+    margin-top: 20px;
 }

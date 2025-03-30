@@ -1,0 +1,515 @@
+:root {
+    --accent-color: #F1E8DD;
+    --main-color: #C74336;
+    --font-color: #3E3D3D;
+    --secondary-color: #CB933A;
+    --dark: rgba(10, 20, 47, 1);
+    --white: rgba(255, 255, 255, 1);
+    --subtitle-font-family: "Kanit", Helvetica;
+    --subtitle-font-weight: 400;
+    --subtitle-font-size: 24px;
+    --subtitle-letter-spacing: 2.4px;
+    --subtitle-line-height: normal;
+    --subtitle-font-style: normal;
+    --rectangle-shadow: 14px 15px 8.199999809265137px 0px rgba(0, 0, 0, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {  
+    font-family: "Kanit", sans-serif;
+    font-weight: 400; 
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Link for Monologue Sans as a Font */
+@font-face {
+    font-family: "MonologueSans";
+    src: url(Font/monologuesansregular-regular.otf) format(opentype);
+}
+
+@font-face {
+    font-family: 'Monologue Sans-Regular';
+    src: url(./font/monologuesansregular-regular.otf);
+  }
+  
+@font-face {
+    font-family: 'Kanit-Regular';
+    src: url(./font/Kanit-Regular.ttf);
+}
+  
+@font-face{
+    font-family: 'Kanit-ThinItalic';
+    src:url(./font/Kanit-ThinItalic.ttf);
+}
+  
+@font-face{
+    font-family: 'Kanit-Medium';
+    src:url(./font/Kanit-Medium.ttf);
+}
+  
+@font-face{
+    font-family: 'Kanit-ExtraLight';
+    src:url(./font/Kanit-ExtraLight.ttf);
+}
+  
+@font-face{
+    font-family: 'Kanit-BoldItalic';
+    src:url(./font/Kanit-BoldItalic.ttf);
+}
+
+/* Navigation Bar */
+.navbar-dark {
+    font-family: "Kanit-Regular", serif;
+    font-optical-sizing: auto;
+    font-size: clamp(18px, 2vw, 24px);
+    padding: 15px 0;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    background: var(--main-color);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    color: #FFF;
+    text-align: center;
+    font-family: "Monologue Sans Regular";
+    font-size: clamp(24px, 3vw, 32px);
+    letter-spacing: 2px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 8px 16px !important;
+    transition: all 0.3s;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar-nav .nav-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-link:hover {
+    color: var(--main-color) !important;
+    background-color: var(--accent-color);
+    border-radius: 35px;
+}
+
+.nav-button .nav-link {
+    background-color: var(--light-color);
+    color: #CB933A !important;
+    border-radius: 20px;
+    padding: 8px 20px !important;
+    margin-left: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid var(--light-color);
+    display: flex;            
+    justify-content: center;  
+    align-items: center;      
+    text-align: center;       
+}
+
+.nav-button .nav-link:hover {
+    background-color: transparent;
+    color: var(--light-color) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+/* Contact Header */
+.contact-header {
+    font-family: "MonologueSans";
+    min-height: 50vh;
+    background-image: url(contact-images/BGHeader.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 50px;
+    margin-top: 85px;
+}
+
+.content {
+    flex: 1;
+    max-width: 40%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center; 
+}
+
+.content a {
+    font-family: "Kanit", sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: #3E3D3D;
+    font-weight: 500;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.content a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.content a:hover {
+    color: #CB933A;
+}
+
+.content a + a::before {
+    content: ">";
+    color: #C74336;
+    margin-right: 5px;
+}
+
+/* Image Header */
+.resto {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resto img {
+    width: 400px;
+    max-width: 400px;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .contact-header {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .content {
+        align-items: flex-start; 
+        max-width: 100%;
+    }
+
+    .title {
+        text-align: left; 
+    }
+
+    .resto {
+        display: none; 
+    }
+}
+
+/* Contact Form */
+.contact-form {
+    background: var(--accent-color);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 40px; 
+    width: 100%;
+    padding: 50px;
+    max-width: 100%; 
+    min-height: 80vh;
+    margin: 0 auto; 
+}
+
+.form {
+    flex: 2; 
+    background: var(--main-color);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.form h1 {
+    font-family: "MonologueSans";
+    color: var(--accent-color);
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-box label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-box input,
+.input-box textarea {
+    font-family: "Kanit", sans-serif;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-box textarea {
+    width: 100%;   
+    height: 120px;  
+    min-height: 100px; 
+    max-width: 100%; 
+    max-height: 250px; 
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none; 
+    box-sizing: border-box; 
+}
+
+
+@media (max-width: 768px) {
+    .input-box textarea {
+        height: 100px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .input-box textarea {
+        height: 80px;
+    }
+}
+
+/* Form Button */
+.button input {
+    font-family: "Kanit", sans-serif;
+    width: 100%;
+    padding: 10px;
+    background: var(--accent-color);
+    color: var(--font-color);
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button input:hover {
+    background: #CB933A;
+}
+
+/* Engagement Section */
+.engagement {
+    font-family: "Kanit", sans-serif;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+    align-items: flex-start; 
+}
+
+.engagement h3 {
+    font-size: 20px;
+    font-weight: normal;
+    font-style: italic;
+    color: #CB933A; 
+    margin-bottom: 5px;
+}
+
+.engagement h2 {
+    font-family: "MonologueSans";
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.engagement h4 {
+    font-family: "MonologueSans";
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--main-color);  
+    margin-top: 15px;
+}
+
+.engagement p {
+    font-size: 16px;
+    color: var(--font-color); 
+    margin: 5px 0;
+}
+
+.engagement p i,
+.engagement p span {
+    color: #CB933A; 
+    font-weight: bold;
+}
+
+
+@media (max-width: 700px) {
+    .contact-form {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .form {
+        flex: 1;
+        max-width: 100%; 
+    }
+
+    .engagement {
+        flex: 1;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
+
+
+/* Contact Details */
+.contact-details {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background: var(--accent-color);
+    gap: 40px; 
+    width: 100%;
+    padding: 50px;
+    max-width: 100%; 
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+.details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    color: #333;
+}
+
+/* Map Section */
+.resto-map {
+    flex: 1.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resto-map iframe {
+    width: 100%;
+    max-width: 700px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.details h3 {
+    font-family: "MonologueSans";
+    font-size: 22px;
+    font-weight: bold;
+    color: #CB933A;
+    margin-bottom: 10px;
+}
+
+.details p {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--font-color);
+    margin-bottom: 15px;
+}
+
+@media (max-width: 700px) {
+    .contact-details {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .details {
+        align-items: center; 
+    }
+
+    .resto-map iframe {
+        max-width: 100%;
+        height: 350px;
+    }
+}
+
+/* Socials Container */
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px; 
+    margin-top: 10px;
+}
+
+/* Social Links */
+.social-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--font-color); 
+    font-size: 16px;
+    font-weight: bold;
+    gap: 10px; 
+    transition: color 0.3s ease;
+}
+
+.social-link img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Hover Effects */
+.social-link:hover {
+    color: #CB933A; 
+}
+
+.instagram:hover {
+    color: #E1306C; 
+}
+
+.facebook:hover {
+    color: #1877F2; 
+}
+
+@media (max-width: 768px) {
+    .socials {
+        flex-direction: column; 
+    }
+}
